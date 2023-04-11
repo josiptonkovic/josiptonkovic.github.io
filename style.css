@@ -1,100 +1,125 @@
-body {
-    background-color: white;
-    color: black;
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 0px;
-    margin: 0px;
-  }
-  
-    .nav {
-    background-color: cadetblue;
-    color: white;
-  }
-  
-    .nav ul {
-    margin: 0px;
-    padding: 0px;
-    list-style-type: none;
-    font-size: 0px;
-  }
-  
-    .nav ul li {
-    padding: 16px;
-    text-align: center;
-    font-size: 1.2rem;
-    border-bottom: 1px solid black;
-    transition: background-color 0.2s;
-  }
-  
-    .nav ul li:hover {
-    background-color:black;
-  }
-  
-  .image-area {
-      background-image:url("Images/banner.jpeg") ;
-      background-position: center center;
-      background-size: cover;
-      padding-top: 300px;
-      padding-bottom: 300px;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 
-  .centered-container {
-    max-width: 1020px;
-    margin: 0px auto;
-    padding: 0px 16px;
+
+:root {
+  --primary-color: #252323;
+  --secondary-color: #70798C;
+  --tertiary-color: #F5F1ED;
+  --footer-color: #A99985;
 }
 
-  .image-text {
-      text-align: center;
-      background-color: black;
-      color:white;
-      font-size: 2.5rem;  
+body {
+    background-color: var(--primary-color);
+    font-family: Quicksand
   }
 
-  .intro-text {
-      color: grey;
-      font-size: 1.5rem;
-      text-align: center;
-      padding-top: 50px;
-      padding-bottom: 50px;
-  }
+h1 {
+  color: var(--tertiary-color);
+  font-size: 5rem;
+  padding-top: 10%;
+  padding-bottom: 5%;
+  text-align: center;
+}
 
-  .service-img {
-      width: 75%;
-      height: 75%;
-  }
+h2 {
+  color: var(--secondary-color);
+  font-size: 3.5rem;
+  padding-bottom: 15%;
+  padding-top: 5%;
+  text-align: center;
+}
 
-  .single-service {
-      text-align: center;
-      margin-bottom: 32px;
+.intro-text {
+  color: var(--tertiary-color);
+  font-size: 2rem;
+  text-align: center;
+  padding: 5%;
+}
 
-  }
+.main-content {
+  margin-top: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 10%;
+  display: flex;
+  align-content: center;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 
-  .single-service p {
-      padding: 0px 16px;
-  }
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
 
-.second-service {
-    color: grey;
-    font-size: 1.5rem;
-    text-align: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
+.project {
+  background-color: var(--tertiary-color);
+  margin: 3%;
+  max-width: 480px;
+}
 
-  @media screen and (min-width: 700px) {
-      .nav ul {
-          text-align: right;
-      }
-      .nav ul li {
-          display: inline-block;
-          border-bottom: 0px;
-          border-left: 1px solid black;
-          text-align: left;
-      }
-      .single-service {
-          width: 50%;
-          float: left;
-      }
-  }
+.project-title {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-bottom: 3%;
+}
+
+.project-text {
+  font-size: 1.5rem;
+  font-weight: bold; 
+}
+
+.btn {
+  background-color: var(--secondary-color);
+  align-items: center;
+  border: 0;
+  border-radius: 100px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 14px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 18px;
+  max-width: 480px;
+  min-height: 40px;
+  min-width: 0px;
+  overflow: hidden;
+  padding: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+  text-align: center;
+  touch-action: manipulation;
+  transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+}
+
+.btn:hover,
+.btn:focus { 
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.btn:active {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.btn:disabled { 
+  cursor: not-allowed;
+  background: rgba(0, 0, 0, .08);
+  color: rgba(0, 0, 0, .3);
+}
+
+footer {
+
+}
